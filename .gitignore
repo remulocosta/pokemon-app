@@ -1,0 +1,73 @@
+# generic backup files
+*~
+
+# eslint cache
+.eslintcache
+
+# vim files
+*.swp
+*.swo
+
+# Editor directories and files
+!.vscode/extensions.json
+*.njsproj
+*.ntvs*
+*.sln
+*.stTheme.cache
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.sw?
+*.tmPreferences.cache
+*.tmlanguage.cache
+.DS_Store
+.idea
+.metadata
+.project
+.vscode/*
+
+# Node.js files
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+src/test/__snapshots__
+
+# build files
+/build
+.config
+.nvm
+.bash_history
+/data/build
+dist
+dist-ssr
+*.local
+
+# RPM build files
+/rpmbuild
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# log files from development and build
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# next.js
+/.next/
+/out/
+
+# vercel
+.vercel
