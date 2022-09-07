@@ -10,10 +10,17 @@
   "description": "Pokemon TCG FrontEnd Challenge",
   "license": "ISC",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.jsx src/"
+    "lint": "eslint --ext .js,.jsx src/",
+    "coverage": "vitest run --coverage",
+    "cy:ci": "cypress run --e2e --browser chrome",
+    "cy:desktop": "cypress open --e2e --browser chrome",
+    "e2e": "server-test 'dev' 3000 'cy:desktop'",
+    "test": "npm-run-all test:*",
+    "test:vitest": "vitest run",
+    "test:e2e-ci": "server-test 'dev' 3000 'cy:ci'"
   },
   "dependencies": {
     "react": "^18.2.0",
