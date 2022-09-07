@@ -34,6 +34,8 @@
 # testing
 /coverage
 src/test/__snapshots__
+cypress/videos/*
+cypress/screenshots/*
 
 # build files
 /build
