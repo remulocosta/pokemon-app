@@ -1,0 +1,129 @@
+@use 'sass:map';
+@use 'src/styles/colors';
+@use 'src/styles/mixins';
+
+.tagList {
+  margin-bottom: .5rem;
+  display: flex;
+  overflow-x: scroll;
+  gap: .75rem;
+
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+  }
+}
+
+.container {
+  position: relative;
+  padding-top: 1rem;
+
+  @include mixins.absolute-child($element: span, $top: .25rem, $right: .5rem);
+  
+  span {
+    padding: .2rem .4rem;
+    border-radius: .5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: colors.$black;
+  }
+}
+
+.value-Resistance {
+  background-color: colors.$green;
+}
+.value-Weakness {
+    background-color: colors.$red;
+}
+
+.tag {
+  padding: .75rem 1.5rem;
+  border-radius: 2rem;
+
+  p {
+    font-size: .75rem;
+  }
+}
+
+.color-Colorless {
+  background-color: map-get(colors.$colorsType, Colorless);
+  p {
+    color: colors.$black;
+  }
+}
+
+.color-Darkness {
+  background-color: map-get(colors.$colorsType, Darkness);
+  p {
+    color: colors.$gray100;
+  }
+}
+
+.color-Dragon {
+  background-color: map-get(colors.$colorsType, Dragon);
+  p {
+    color: colors.$black;
+  }
+}
+
+.color-Fairy {
+  background-color: map-get(colors.$colorsType, Fairy);
+  p {
+    color: colors.$gray100;
+  }
+}
+
+.color-Fighting {
+  background-color: map-get(colors.$colorsType, Fighting);
+  p {
+    color: colors.$gray100;
+  }
+}
+
+.color-Fire {
+  background-color: map-get(colors.$colorsType, Fire);
+  p {
+    color: colors.$black;
+  }
+}
+
+.color-Grass {
+  background-color: map-get(colors.$colorsType, Grass);
+  p {
+    color: colors.$black;
+  }
+}
+
+.color-Lightning {
+  background-color: map-get(colors.$colorsType, Lightning);
+  p {
+    color: colors.$black;
+  }
+}
+
+.color-Metal {
+  background-color: map-get(colors.$colorsType, Metal);
+  p {
+    color: colors.$black;
+  }
+}
+
+.color-Psychic {
+  background-color: map-get(colors.$colorsType, Psychic);
+  p {
+    color: colors.$black;
+  }
+}
+
+.color-Water {
+  background-color: map-get(colors.$colorsType, Water);
+  p {
+    color: colors.$black;
+  }
+}
