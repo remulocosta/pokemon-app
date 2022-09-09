@@ -8,7 +8,7 @@
     "email": "remulo.costa@gmail.com"
   },
   "description": "Pokemon TCG FrontEnd Challenge",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "dev": "vite --port 3000",
     "build": "vite build",
