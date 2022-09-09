@@ -4,8 +4,9 @@ import {cardsRequest} from 'src/requests/api';
 
 export const fetchCards = createAsyncThunk(
   'cards/list',
-  async ({filter}, thunkAPI) =>
+  async (props, thunkAPI) =>
   {
+    const {filter} = props;
     const state = thunkAPI.getState();
     const {page, shouldFetchMoreData} = (state).pokemon;
 
