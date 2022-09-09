@@ -1,7 +1,10 @@
 /**
  * IMPORTS
  */
-import {React} from 'react';
+import React from 'react';
+import {Provider} from 'react-redux';
+import {store} from 'src/redux/store';
+import {AppRoutes} from 'src/Routes/AppRoutes';
 
 
 /**
@@ -16,9 +19,9 @@ import {React} from 'react';
 function App ()
 {
   return (
-    <h1>
-      Pokémon TCG
-    </h1>
+    <Provider store={store}>
+      <AppRoutes />
+    </Provider>
   );
 }
 
