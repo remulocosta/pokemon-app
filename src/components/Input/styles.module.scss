@@ -1,0 +1,32 @@
+@use 'src/styles/colors';
+
+.input {
+  background-color: colors.$gray100;
+  border-radius: .45rem;
+  border: 1px solid colors.$blue-dark;
+  box-sizing: border-box;
+  color: colors.$blue-dark;
+  height: 3rem;
+  max-width: 400px;
+  padding: .8rem;
+  width: 100%;
+
+  transition: border 200ms ease;
+
+  &:focus {
+    outline: none;
+    border-color: colors.$yellow;
+    font-weight: 500;
+  }
+
+  &:hover {
+    border-color: colors.$yellow;
+  }
+
+  &::placeholder,
+  &:-ms-input-placeholder,
+  &::-ms-input-placeholder { 
+    color: colors.$gray400;
+    opacity: 0.5;
+  }
+}
